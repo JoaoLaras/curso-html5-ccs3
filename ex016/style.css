@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-image: linear-gradient(to right, #9FC131 , #DBF227, #D6D58E);
+}
+
+main {
+    background-color: white;
+    width: 600px; /*LARGURA*/
+    padding: 10px; /*ACOLCHOAMENTO*/
+    margin: auto; /*CENTRALIZAR*/
+    border-radius: 10px; /*COLOCAR BORDA ARREDONDADA*/
+    box-shadow: 5px 5px 15px #313120b4; /*COLOCAR SOMBRA PARAMETROS(1 - QUANTO A SOMBRA VAI ANDAR PARA O LADO, 2 - QUANTO ESSA SOMBRA VAI ANDAR PARA BAIXO, 3 - QUANTO ESSA SOMBRA VAI ESPALHAR E 4 - COR E TRANSPARENCIA DA SOMBRA */
+}
+h1 {
+    color: #042940;
+    text-align: center;
+    text-shadow: 1px 1px 2px #08517e;
+}
+h2 {
+    color: #005C53;
+}
+
+p {
+    
+   text-align: justify; 
+}

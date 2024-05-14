@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style> h1 { /*  BOX LEVEL display block*/
+        background-color: lightgrey;
+        height: 300px;
+        width: 300px;
+        border-width: 10px; /* LARGURA DA BORDA/EXPESSURA DA BORDA*/
+        border-style: solid;
+        border-color: grey;
+
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+
+        margin-top: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        
+        /* margin: auto; CENTRALIZAR BOX*/
+        outline-width: 5px;
+        outline-style: dashed;
+        outline-color: red;
+        
+       /* SIMPLIFICANDO BORDER, PADDING, MARGIN*/
+       /* BOLDER */
+       border: 10px solid darkslategray; /* ORDEM - width, style, color*/
+
+
+       /* PADDING */
+       padding: 20px;/* ORDEM - top, right, bottom, left* 10px - OS QUATROS/ 10px - CIMA E BAIXO e 20px - DIREITA E ESQUERDA/
+
+       /* MARGIN*/
+       margin: 10px auto 10px auto;
+
+       /* OUTLINE*/
+       outline: 5px dashed red;
+
+
+    }
+    a {  /* INLINE LEVEL - display inline*/
+        
+        border-width: 10px;
+        border-style: solid;
+        border-color: red;
+
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        margin-top: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        
+    }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas o <a href="#">links são exemplo de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>
