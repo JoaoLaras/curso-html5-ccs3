@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+    <style>
+    #container {
+        background-image: url(imagens/target001.png);
+        background-size: 100% 100%;
+        position: relative; /*  Quando você define um elemento com position: relative, ele ainda ocupa espaço no layout como faria normalmente, mas você pode ajustar sua posição usando as propriedades top, right, bottom e left. */
+        height: 96vh;
+        padding: 10px;
+        background-color: purple;
+    }
+    #conteudo {
+        background-image: url(imagens/target001.png);
+        background-size: 100% 100%;
+        height: 200px;
+        width: 400px;
+        background-color: yellow;
+        position: absolute; /* A propriedade position: absolute no CSS é usada para posicionar um elemento em relação ao seu contêiner mais próximo com posição relativa (position: relative), absoluta (position: absolute), fixa (position: fixed) ou colada (position: sticky). Quando um elemento é posicionado absolutamente, ele é removido do fluxo normal do documento, o que significa que ele não afeta o layout dos elementos ao seu redor.*/
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) /* A propriedade transform: translate no CSS é usada para mover um elemento de sua posição atual ao longo dos eixos X e Y.  ( x: Define o deslocamento horizontal. y: Define o deslocamento vertical.)Ela é uma ferramenta poderosa para criar animações e ajustar a posição dos elementos sem afetar o layout circundante. A função translate desloca o elemento em um determinado número de pixels, porcentagens ou outras unidades, sem removê-lo do fluxo do documento. */
+        
+    } 
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
