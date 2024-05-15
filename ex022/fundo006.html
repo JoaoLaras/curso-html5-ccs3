@@ -3,23 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body { 
             height: 100vh;
+            
             background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
-            background-repeat: no-repeat;
             background-position: center center;
-            background-size: cover; /* Auto, px ou %, contain, cover*/
+            background-repeat: no-repeat;
+            background-size: cover; /* Auto, px ou %, contain, {COVER} Garante que a imagem cubra todo o elemento, potencialmente cortando partes da imagem para manter a proporção.*/ 
+            background-attachment: fixed; /* A imagem de fundo permanecerá fixa em relação à janela de visualização, mesmo quando o conteúdo do elemento é rolado. Isso cria um efeito de rolagem parallax onde a imagem de fundo permanece na mesma posição enquanto você rola o conteúdo da página. */ 
+
+            margin: auto;
+            /*Shorthand - background
+            color > image > position > repeat > [size] > attachment*/
+            background: black url(imagens/wallpaper002.jpg) center center no-repeat cover fixed;
+            /*background-size: cover; COVER NAO ESTA FUNCIONANDO NA SHORTHAND*/
         }
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             text-align: justify;
-            border: 2px solid blue;
+            border: 2px solid black;
             border-radius: 15px;
         }
     </style>
@@ -27,6 +35,12 @@
 <body>
     <main>
         <h1>Teste de Imagem de Fundo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto fuga, quasi laudantium similique obcaecati distinctio error delectus accusamus suscipit necessitatibus adipisci mollitia sed doloremque natus dolores ducimus vero. Quam, tenetur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis libero nostrum, inventore, deserunt expedita recusandae sed iusto dignissimos modi velit eos sit delectus quas consequuntur vitae quam voluptatum? Doloribus, deleniti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quas assumenda ipsum perferendis voluptatem corporis nisi nobis, vitae non maxime magni doloremque vero blanditiis accusamus maiores, nemo quibusdam id adipisci.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto fuga, quasi laudantium similique obcaecati distinctio error delectus accusamus suscipit necessitatibus adipisci mollitia sed doloremque natus dolores ducimus vero. Quam, tenetur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis libero nostrum, inventore, deserunt expedita recusandae sed iusto dignissimos modi velit eos sit delectus quas consequuntur vitae quam voluptatum? Doloribus, deleniti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quas assumenda ipsum perferendis voluptatem corporis nisi nobis, vitae non maxime magni doloremque vero blanditiis accusamus maiores, nemo quibusdam id adipisci.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto fuga, quasi laudantium similique obcaecati distinctio error delectus accusamus suscipit necessitatibus adipisci mollitia sed doloremque natus dolores ducimus vero. Quam, tenetur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis libero nostrum, inventore, deserunt expedita recusandae sed iusto dignissimos modi velit eos sit delectus quas consequuntur vitae quam voluptatum? Doloribus, deleniti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quas assumenda ipsum perferendis voluptatem corporis nisi nobis, vitae non maxime magni doloremque vero blanditiis accusamus maiores, nemo quibusdam id adipisci.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto fuga, quasi laudantium similique obcaecati distinctio error delectus accusamus suscipit necessitatibus adipisci mollitia sed doloremque natus dolores ducimus vero. Quam, tenetur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis libero nostrum, inventore, deserunt expedita recusandae sed iusto dignissimos modi velit eos sit delectus quas consequuntur vitae quam voluptatum? Doloribus, deleniti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quas assumenda ipsum perferendis voluptatem corporis nisi nobis, vitae non maxime magni doloremque vero blanditiis accusamus maiores, nemo quibusdam id adipisci.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto fuga, quasi laudantium similique obcaecati distinctio error delectus accusamus suscipit necessitatibus adipisci mollitia sed doloremque natus dolores ducimus vero. Quam, tenetur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis libero nostrum, inventore, deserunt expedita recusandae sed iusto dignissimos modi velit eos sit delectus quas consequuntur vitae quam voluptatum? Doloribus, deleniti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quas assumenda ipsum perferendis voluptatem corporis nisi nobis, vitae non maxime magni doloremque vero blanditiis accusamus maiores, nemo quibusdam id adipisci.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto fuga, quasi laudantium similique obcaecati distinctio error delectus accusamus suscipit necessitatibus adipisci mollitia sed doloremque natus dolores ducimus vero. Quam, tenetur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis libero nostrum, inventore, deserunt expedita recusandae sed iusto dignissimos modi velit eos sit delectus quas consequuntur vitae quam voluptatum? Doloribus, deleniti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quas assumenda ipsum perferendis voluptatem corporis nisi nobis, vitae non maxime magni doloremque vero blanditiis accusamus maiores, nemo quibusdam id adipisci.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto fuga, quasi laudantium similique obcaecati distinctio error delectus accusamus suscipit necessitatibus adipisci mollitia sed doloremque natus dolores ducimus vero. Quam, tenetur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis libero nostrum, inventore, deserunt expedita recusandae sed iusto dignissimos modi velit eos sit delectus quas consequuntur vitae quam voluptatum? Doloribus, deleniti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quas assumenda ipsum perferendis voluptatem corporis nisi nobis, vitae non maxime magni doloremque vero blanditiis accusamus maiores, nemo quibusdam id adipisci.</p>
     </main>
 </body>
