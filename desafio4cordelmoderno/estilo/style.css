@@ -1,0 +1,105 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Passion One';
+    src: url('/desafio4cordelmoderno/fontes/PassionOne-Regular.ttf') format(truetype);
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: Sriracha;
+    src: url(/desafio4cordelmoderno/fontes/Sriracha-Regular.ttf) format(truetype);
+}
+
+:root { 
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', sans-serif;
+    --fonte3: 'Sriracha', cursive;
+   
+
+}
+
+*{ 
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+html, body {
+    min-height: 100vh;
+    background-color: darkgrey;
+    font-family: var(--fonte1);
+    
+}
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header h1 {
+    padding-top: 50px;
+    /* text-transform: uppercase; JOGAR TODAS AS LETRA PARA MAIUSCULAS */
+    font-variant: small-caps; /* JOGAR TODAS AS LETRA PARA MAIUSCULAS */
+    font-family: var(--fonte2);
+    font-size: 8vw; /*Usar font-size: 8vw em CSS significa que o tamanho da fonte será 8% da largura da janela de visualização (viewport). Esta é uma unidade responsiva, fazendo com que o tamanho do texto se ajuste de acordo com a largura da janela do navegador. Aqui está um exemplo de como usá-la no seu CSS:*/
+}
+header p {
+    padding-bottom: 50px;
+}
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh; /* aplicar um padding-top de 10vh (10% da altura da janela de visualização) a um elemento*/
+    padding-bottom: 10vh; 
+    line-height: 2em; /*ESPACAMENTO ENTRE AS LINHAS*/
+    padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 4vw;
+   
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+section.imagem {
+    background-color: rgb(114, 113, 113);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.779);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+section.imagem > p {
+    display: inline-block; /* Em CSS, a propriedade display: inline-block; é usada para criar elementos que são renderizados como blocos inline. Isso significa que eles se comportam como elementos inline, mas podem ter propriedades de bloco aplicadas, como largura, altura, margem e preenchimento. Aqui está uma explicação mais detalhada e exemplos de como usar display: inline-block; */
+    background-color: rgba(0, 0, 0, 0.514);
+    padding: 5px;
+    text-shadow: 1px 1px 0px black;
+
+}
+section#img01 {
+    background-image: url(../imagens/background001.jpg);
+
+}
+section#img02 {
+    background-image: url(../imagens/background002.jpg);
+
+}
+section p {
+    padding-bottom: 2em;
+}
+
+footer {
+    
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
