@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: normal;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        tr {
+            border: 1px solid black;
+           
+        }     
+        
+        th, td {
+            border: 1px solid black;
+            padding: 5px;                
+                 
+        }
+        /* Odd - linha impar 
+           Even - linha par 
+           2n-1
+           2n*/
+        tbody > tr:nth-child(odd) /* efeito zebrado*/ {
+            background-color: wheat;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgb(207, 206, 206);
+            border: 1px solid black;
+            box-shadow: 1px 1px 3px rgb(59, 59, 59);
+        }
+        thead > tr > th {
+            position: sticky; /*grudar*/
+            top: -1px;
+            background-color: gray;
+            border: 1px solid black;           
+
+        }
+
+        thead, tfoot{
+            background-color: gray;
+            color: white;
+            text-align: left;
+        }
+        thead th {
+            text-align: center;
+        }
+        .num {
+            text-align: right;
+        }
+        h1 {
+            text-align: center;
+        }     
+        
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            CAPTION
+            THEAD 
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <th scope="col" style="width: 50px;">Posição</th> <!--título de ESCOPO da coluna-->
+            <th scope="col" style="width: 50px;">Unidade Federativa</th><!--título de ESCOPO da coluna-->
+            <th scope="col" style="width: 50px;">População</th><!--título de ESCOPO da coluna-->
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td> <img src="imagens/Bandeira_do_estado_de_São_Paulo.svg.webp" alt="Bandeira do estado de São Paulo"> São Paulo</td>
+                <td class="num">44 411 238</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td> <img src="imagens/Bandeira_de_Minas_Gerais.svg.webp" alt="Bandeira do estado de Minas Gerais"> Minas Gerais</td>
+                <td class="num">20 538 718</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td> <img src="imagens/Bandeira_do_estado_do_Rio_de_Janeiro.svg.webp" alt="Bandeira do estado do Rio de Janeiro"> Rio de Janeiro</td>
+                <td             class="num"> 16 054 524</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td> <img src="imagens/Bandeira_da_Bahia.svg.webp" alt="Bandeira do estado da Bahia"> Bahia</td>
+                <td class="num">14 141 626</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td> <img src="imagens/Bandeira_do_Paraná.svg.webp" alt="Bandeira do estado do Paraná"> Paraná</td>
+                <td class="num">11 444 380</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td> <img src="imagens/Bandeira_do_Rio_Grande_do_Sul.svg.webp" alt="Bandeira do estado do Rio Grande do Sul"> Rio Grande do Sul</td>
+                <td class="num">10 882 965</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td> <img src="imagens/Bandeira_de_Pernambuco.svg.webp" alt="Bandeira do estado de Pernambuco"> Pernambuco</td>
+                <td class="num">9 058 931</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td> <img src="imagens/Bandeira_do_Ceará.svg.png" alt="Bandeira do estado do Ceará"> Ceará</td>
+                <td class="num">8 794 957</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td> <img src="imagens/Bandeira_do_Pará.svg.png" alt="Bandeira do estado do Pará"> Pará</td>
+                <td  class="num">8 121 025</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td> <img src="imagens/Bandeira_de_Santa_Catarina.svg.webp" alt="Bandeira do estado de Santa Catarina"> Santa Catarina</td>
+                <td  class="num">7 610 361</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td> <img src="imagens/Flag_of_Goiás.svg.webp" alt="Bandeira do estado de Goiás"> Goiás</td>
+                <td   class="num">7 056 495</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td> <img src="imagens/Bandeira_do_Maranhão.svg.webp" alt="Bandeira do estado do Maranhão"> Maranhão</td>
+                <td  class="num">6 775 805</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td> <img src="imagens/20px-Bandeira_da_Paraíba.svg.webp" alt="Bandeira do estado da Paraíba"> Paraíba</td>
+                <td  class="num">3 974 687</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td> <img src="imagens/Bandeira_do_Amazonas.svg.webp" alt="Bandeira do estado de Amazonas"> Amazonas</td>
+                <td class="num">3 941 613</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td> <img src="imagens/Bandeira_do_Espírito_Santo.svg.png" alt="Bandeira do estado do Espírito Santo"> Espírito Santo</td>
+                <td  class="num">3 833 712</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td> <img src="imagens/Bandeira_de_Mato_Grosso.svg.webp" alt="Bandeira do estado do Mato Grosso"> Mato Grosso</td>
+                <td class="num">3 658 649</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td> <img src="imagens/Bandeira_do_Rio_Grande_do_Norte.svg.webp" alt="Bandeira do estado do Rio Grande do Norte"> Rio Grande do Norte</td>
+                <td class="num">3 302 729</td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td> <img src="imagens/Bandeira_do_Piauí.svg.webp" alt="Bandeira do estado do Piauí"> Piauí</td>
+                <td class="num">3 271 199</td>
+            </tr>
+            <tr>
+                <td>19</td>
+                <td> <img src="imagens/20px-Bandeira_de_Alagoas.svg.webp" alt="Bandeira do estado de Alagoas"> Alagoas</td>
+                <td class="num">3 127 683</td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td> <img src="imagens/Bandeira_do_Distrito_Federal_(Brasil).svg.webp" alt="Bandeira do estado do Distrito Federal"> Distrito Federal</td>
+                <td class="num">2 817 381</td>
+            </tr>
+            <tr>
+                <td>21</td>
+                <td> <img src="imagens/Bandeira_de_Mato_Grosso_do_Sul.svg.webp" alt="Bandeira do estado do Mato Grosso do Sul"> Mato Grosso do Sul</td>
+                <td class="num">2 757 013</td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td> <img src="imagens/Bandeira_de_Sergipe.svg.webp" alt="Bandeira do estado de Sergipe">Sergipe</td>
+                <td class="num">2 209 558</td>
+            </tr>
+            <tr>
+                <td>23</td>
+                <td> <img src="imagens/Bandeira_de_Rondônia.svg.webp" alt="Bandeira do estado de Rondônia"> Rondônia</td>
+                <td class="num">1 581 196</td>
+            </tr>
+            <tr>
+                <td>24</td>
+                <td> <img src="imagens/Bandeira_do_Tocantins.svg.webp" alt="Bandeira do estado do Tocantins"> Tocantins</td>
+                <td class="num">1 511 460</td>
+            </tr>
+            <tr>
+                <td>25</td>
+                <td> <img src="imagens/Bandeira_do_Acre.svg.webp" alt="Bandeira do estado do Acre"> Acre</td>
+                <td class="num">830 018</td>
+            </tr>
+            <tr>
+                <td>26</td>
+                <td> <img src="imagens/Bandeira_do_Amapá.svg.webp" alt="Bandeira do estado do Amapá"> Amapá</td>
+                <td class="num">733 759</td>
+            </tr>
+            <tr>
+                <td>27</td>
+                <td> <img src="imagens/Bandeira_de_Roraima.svg.webp" alt="Bandeira do estado de Roraima"> Roraima</td>
+                <td class="num">636 707</td>
+            </tr>
+          
+            
+            
+           
+            
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>-</th>
+                <th scope="row">Total de Habitantes</th> <!--título de ESCOPO da Linha-->
+                <td class="num"><strong>203 062 512</strong></td>                
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
